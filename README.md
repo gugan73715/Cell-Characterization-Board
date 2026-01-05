@@ -40,8 +40,9 @@ GND and PWR plane are continous and unbroken providing low-impedance return path
   
 # Hardware
 ![Cell characterization board V1 2 - Top Level_page-0001](https://github.com/user-attachments/assets/958f1ddc-cff1-46bc-9eeb-34644356cadd)
-## System Architecture Summary
-### Buck and LDO
+## System Architecture Summary (Click for schematic sheet on each subsection)
+### [Buck and LDO](https://github.com/user-attachments/assets/433c3e82-389d-4984-9a22-51cbf6804a1b)
+
 - input DC Jack / XT60: 8–40 V
 - input USB-C: 5V 3A (Non-PD)
 - 5 V logic rail via AP64502QSP-13 based synchronous buck converter
