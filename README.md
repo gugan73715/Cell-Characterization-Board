@@ -9,6 +9,7 @@ V1.2 serves as a validation vehicle for the custom analog front-end and discharg
 - Sequential testing to minimize BOM cost and thermal complexity
 - Hardware based protection features for reliability
 - Reduce manufacturing and assembly cost as much as possible due to budget constraint
+- Rapid bring up
 - Clear documentation of design intent and constraints
   
 # PCB Design:
@@ -130,7 +131,37 @@ The system is implemented on a custom 4-layer mixed-signal PCB (SIG / GND / PWR 
 - SD detect LED for user-friendliness
 - Parameters: Time, Cell Voltage, Discharge Current, Internal Resistance, I_set, Cut-off voltage and capacity (mAh / Wh)
 - Internal Resistance is calculated using r = (V_OC - V_sense)/I. (Voltage drop across cell under a load)
-  
+
+## Prototyping and validation:
+
+### LTspice simulation: (Constant Current Sink)
+<img width="1542" height="707" alt="Screenshot 2026-01-06 123358" src="https://github.com/user-attachments/assets/46b6fb00-8493-47e5-822a-310cfd7fd405" />
+<img width="1663" height="660" alt="Screenshot 2026-01-06 123447" src="https://github.com/user-attachments/assets/47166103-3dc8-4b8e-8694-f1cf94260544" />
+
+### Breadboard prototyping:
+![20251222_143426](https://github.com/user-attachments/assets/6d482761-0a7b-45e0-ab45-72fcc96c5c39)
+
+- Constant current sink prototype built using IRL510 + LM158J
+- Shunt resistor: 1.5 Ω / 5 W
+- Gate and feedback resistors as implemented in hardware
+- 0.5V out DAC emulated via resistive divider from 5 V
+- Load driven by a current-limited (For safety) bench supply (2.5 V–4.2 V sweep)
+
+Measured discharge current remained approximately constant (~340 mA) across the full input voltage range.
+
+# Firmware
+
+- Initial firmware under development using using Arduino IDE for rapid bring-up
+- Secondary firmware planned using STM32CubeIDE with STM32HAL and testing using an STM32 Nucleo board
+
+### Objectives:
+
+- Validation of the sequential switching mechanism to guarantee mutual exclusivity of active channels
+- Cell voltage sampling verification across all channels using the MUX
+- Verify ADC and DAC resolution using the shared 2.5 V reference
+- Validation of current measurement accuracy and stability across the full discharge range
+
+
 
 
 
