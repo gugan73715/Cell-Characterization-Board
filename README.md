@@ -40,7 +40,7 @@ GND and PWR plane are continous and unbroken providing low-impedance return path
   
 # Hardware
 ![Cell characterization board V1 2 - Top Level_page-0001](https://github.com/user-attachments/assets/958f1ddc-cff1-46bc-9eeb-34644356cadd)
-## System Architecture Summary (Click for schematic sheet on each subsection header)
+## System Architecture Summary (Click for on subsection header for schematic sheet)
 <details>
 <summary><h3>Buck and LDO</h3></summary>
 [![Buck and LDO Schematic](https://github.com/user-attachments/assets/433c3e82-389d-4984-9a22-51cbf6804a1b)](https://github.com/user-attachments/assets/433c3e82-389d-4984-9a22-51cbf6804a1b)
@@ -65,7 +65,13 @@ GND and PWR plane are continous and unbroken providing low-impedance return path
 - Load MOSFET temprature monitoring via NTC
 - Maximum discharge current: 5 A
 
-### MCU
+<details>
+
+<summary><h3>MCU</h3></summary>
+[![MCU](https://github.com/user-attachments/assets/d0f35247-9f11-4299-ac2f-d843d51ea3c3)](https://github.com/user-attachments/assets/d0f35247-9f11-4299-ac2f-d843d51ea3c3)
+
+</details>
+
 - Compatable with 3.3v STM32 Nucleo boards with nano connectivity and Arduiuno nano
 - External I2C header for debugging and future expansion modules
 - External UART header for telemetry
