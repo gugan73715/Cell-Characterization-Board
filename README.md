@@ -42,7 +42,12 @@ The system is implemented on a custom 4-layer mixed-signal PCB (SIG / GND / PWR 
 - Testpoints for 5V, 3.3V, 2.5V ref, GND, I_set, Constant Current op-amp feedback line, MOSFET Gate and I_sense.
 - External UART, SPI and I2C headers for logic analysis
 - MUX-out(Cell voltage) is accessible through MCU header
-  
+
+### Assembly & Cost Optimization
+- 5 channels was placed on top and bottom to reduce PCB size and save fabrication costs
+- Passive components are assembled by fabrication house and all of them have been placed on top for one sided assembly
+- Active ICs, cell holders and connectors are hand-assembled post-fabrication to reduce assembly cost while retaining full control over critical components
+
 # Hardware
 ![08e247f1-ca4d-435c-84c2-786f73447f0c-0](https://github.com/user-attachments/assets/2f0dbedd-297c-4e65-9135-7c6beeae0f6e)
 
@@ -161,7 +166,16 @@ Measured discharge current remained approximately constant (~340 mA) across the 
 - Verify ADC and DAC resolution using the shared 2.5 V reference
 - Validation of current measurement accuracy and stability across the full discharge range
 
+# Planned Revision (V2): (Production oriented version)
 
+- Transitioning to a STM32G0B1CCT6 onboard MCU
+- Switching to SPI-based TFT display for real-time visualization
+- Swithcing to Zero-drift, ultra-low-offset op-amp for better accuracy
+- NTC on each channel for cell temprature monitoring
+- Short-circuit and overtemprature protection for each channel 
+- Firmware detection of protection features and informing the user
+- Audible and visual fault and status indication (buzzer and status LEDs)
+  
 
 
 
