@@ -39,7 +39,7 @@ The system is implemented on a custom 4-layer mixed-signal PCB (SIG / GND / PWR 
 - Relay coil and Flyback traces are kept as short as possible and fanned out to prevent noise from adjacent traces
 - Decoupling capacitors placed close to each IC supply pin
 - Reverse polarity protection for each channel using P-channel MOSFETs
-- V_Cell traces are connected straight to cell holder for Qausi-kelvin sense and current limiting resistor on each trace to protect the MUX in case of reverse polarity.
+- V_Cell traces are connected straight to cell holder for Quasi-kelvin sense and current limiting resistor on each trace to protect the MUX in case of reverse polarity.
 - NTC on Load MOSFET's heatsink for active over temperature protection
 - 30 ms Soft start for BUCK IC to prevent overshoot and inrush current
 
@@ -79,7 +79,7 @@ The system is implemented on a custom 4-layer mixed-signal PCB (SIG / GND / PWR 
 - DAC60501ZDGSR 12-bit DAC for precise control of discharge current and controlled via I2C
 - Internal 2.5 V precision reference of DAC is shared by ADC as well
 - Amplified I_sense signal (0 - 2.5V) using MCP6001 for better resolution
-- Theoretically MOSFET temperature with heat sink (θ_normal = 2.6 C/W) at max case (5A) is 115.86 C
+- Theoretical MOSFET temperature with heat sink (θ_normal = 2.6 C/W) at max case (5A) is 115.86 C (Assuming 25 C ambient)
 - Load MOSFET temperature monitoring via NTC
 - Maximum discharge current: 5 A
 
@@ -90,7 +90,7 @@ The system is implemented on a custom 4-layer mixed-signal PCB (SIG / GND / PWR 
 
 </details>
 
-- Compatible with 3.3v STM32 Nucleo boards with nano connectivity like NUCLEO-L432KC and Arduino nano
+- Compatible with 3.3V STM32 Nucleo boards with nano connectivity like NUCLEO-L432KC and Arduino nano
 - External I2C header for debugging and future expansion modules
 - External UART header for telemetry
 
