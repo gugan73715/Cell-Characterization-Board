@@ -176,7 +176,7 @@ Measured discharge current remained approximately constant (~340 mA) across the 
 - Verify ADC and DAC resolution using the shared 2.5 V reference
 - Validation of current measurement accuracy and stability across the full discharge range
 
-# Planned Revision (V2): (Production oriented version)
+# Planned Revision (V2):
 
 - Transitioning to a STM32G0B1CCT6 onboard MCU
 - Switching to SPI-based TFT display for real-time visualization
