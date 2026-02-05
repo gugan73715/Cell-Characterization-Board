@@ -21,6 +21,8 @@ This system is designed to characterize and screen individual lithium-ion cells 
 ## Latest 3D Render:
 ![Cell Characterization Board V1 2 3D Render - Top](https://github.com/user-attachments/assets/29e0ffa8-d2e8-4c36-aab5-d34a47237cab)
 <img width="4265" height="4019" alt="Cell Characterization Board V1 2 3D Render - Bottom" src="https://github.com/user-attachments/assets/4b63f3ed-e3a5-4549-a06e-88446abbb75f" />
+## V1.2:
+![IMG_2725](https://github.com/user-attachments/assets/c27dc474-c327-4732-a6f4-5caad4d582f8)
 
 ## System Validation & Discharge Data:
 ![CELL ID 3](https://github.com/user-attachments/assets/dfa897fc-4fd2-434a-9754-ce8ace231c89)
