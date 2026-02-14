@@ -168,8 +168,8 @@ Measured discharge current remained approximately constant (~340 mA) across the 
 
 # Firmware
 
-- Initial firmware under development using Arduino IDE for rapid bring-up
-- Secondary firmware planned using STM32CubeIDE with STM32HAL and testing using an STM32 Nucleo board
+- Initial firmware developed using Arduino IDE for rapid bring-up
+- Secondary firmware under development using STM32CubeIDE with STM32HAL and testing using an NUCLEO-G431KB
 
 ### Objectives:
 
